@@ -25,25 +25,28 @@
 			<div class="row">
 				<div class="green shadowed stuff-box">
 					<form>
-						<input type="range" min="0" max="11" value="0" onchange="fibSlider(this)">
+						<h3>Fibonacci Sequence</h3>
+						<input class="slider" type="range" min="0" max="11" value="0" onchange="fibSlider(this)" oninput="fibButton(value)">
 						<button type="button" onclick="fibButton(this)">Fib(0)</button>
 					</form>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="blue shadowed stuff-box">
+				<div class="green shadowed stuff-box">
 					<form>
-						<input type="range" min="0" max="11" value="0" onchange="pellSlider(this)">
+						<h3>Pell Sequence</h3>
+						<input class="slider" type="range" min="0" max="11" value="0" onchange="pellSlider(this)">
 						<button type="button" onclick="pellButton(this)">Pell(0)</button>
 					</form>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="red shadowed stuff-box">
+				<div class="green shadowed stuff-box">
 					<form>
-						<input type="range" min="0" max="11" value="0" onchange="tribSlider(this)">
+						<h3>Tribonacci Sequence</h3>
+						<input class="slider" type="range" min="0" max="11" value="0" onchange="tribSlider(this)">
 						<button type="button" onclick="tribButton(this)">Trib(0)</button>
 					</form>
 				</div>
