@@ -6,27 +6,58 @@
 	<meta charset="utf-8">
 
 	<title>Javascript User Interaction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="recursive.css" type="text/css">
-	<script src="scratchpad.js" type="text/javascript">
-	</script>
+	<script src="scratchpad.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-	<div class="green shadowed stuff-box">
-		<form>
-			<input type="range" min="0" max="11" value="0" onchange="fibSlider(this)">
-			<button type="button" onclick="fibButton(this)">Fib(0)</button>
-		</form>
+	<header class="container-fluid text-center">
+		<h2>JavaScript Recursive Sequences</h2>
+	</header>
+	<div class="panel-body">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="green shadowed stuff-box">
+					<form>
+						<input type="range" min="0" max="11" value="0" onchange="fibSlider(this)">
+						<button type="button" onclick="fibButton(this)">Fib(0)</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="blue shadowed stuff-box">
+					<form>
+						<input type="range" min="0" max="11" value="0" onchange="pellSlider(this)">
+						<button type="button" onclick="pellButton(this)">Pell(0)</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="yellow shadowed stuff-box">
+					<form>
+						<input type="range" min="0" max="11" value="0" onchange="tribSlider(this)">
+						<button type="button" onclick="tribButton(this)">Trib(0)</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<div class="blue shadowed stuff-box">
-		<form>
-			<input type="range" min="0" max="11" value="0" onchange="pellSlider(this)">
-			<button type="button" onclick="pellButton(this)">Pell(0)</button>
-		</form>
-	</div>
-
-
+<footer class="container-fluid text-center">
+	<p>
+		<a target="_blank" href="https://oeis.org/A000045">Fibonacci</a>&nbsp;&nbsp;|
+		<a target="_blank" href="https://oeis.org/A000129">Pell</a>&nbsp;&nbsp;|
+		<a target="_blank" href="https://oeis.org/A000073">Tribonacci</a>
+	</p>
+	<p>2017 - Mary Dettenmaier - CS2610 - Assignment #6 - Recursive JS</p>
+</footer>
 </body>
 
 </html>

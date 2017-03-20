@@ -132,3 +132,75 @@ var pellSlider = function(me) {
 	button.textContent = 'Pell(' + me.value + ')';
 }
 ///////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////
+//Tribonacci Sequence Functions
+
+function tribHelper(n) {
+	var value;
+	var div = document.createElement('div');
+	div.setAttribute("class", "trib");
+
+	n = parseInt(n);
+
+	// leaf nodes aka. base case
+	if (n < 2) {
+		if (n === 0) {
+			value = 0;
+		}
+		else if (n < 3 && n!=0) {
+			value = 1;
+		}
+		var p = document.createElement('p');
+		p.textContent = 'Trib(' + n + ') = ' + value;
+		div.appendChild(p)
+	}
+	else {
+		var left = tribHelper(n - 1);
+		var clas = left.html.getAttribute('class');
+		left.html.setAttribute('class', clas + ' trib-left');
+		
+		var center = tribHelper(n - 2);
+		clas = center.html.getAttribute('class');
+		center.html.setAttribute('class', clas + ' trib-center');
+
+		var right = tribHelper(n - 3);
+		clas = right.html.getAttribute('class');
+		right.html.setAttribute('class', clas + ' trib-right');
+
+		value = left.value + center.value + right.value;
+		var p = document.createElement('p');
+		p.textContent = 'Trib(' + n + ') = ' + value;
+		div.appendChild(p);
+
+		div.appendChild(left.html);
+		div.appendChild(center.html);
+		div.appendChild(right.html);
+	}
+
+	return { 'value': value, 'html': div };
+}
+
+var trib = function (n, node) {
+	var tribTree = node.querySelector('div.trib');
+	if (tribTree) {
+		node.removeChild(tribTree);
+	}
+
+	var tree = tribHelper(n);
+	node.appendChild(tree.html);
+}
+
+var tribButton = function(me) {
+	var form = me.parentNode;
+	var slider = form.querySelector('input');
+	var value = slider.value;
+	trib(parseInt(slider.value), form.parentNode);
+}
+
+var tribSlider = function(me) {
+	var form = me.parentNode;
+	var button = form.querySelector('button');
+	button.textContent = 'Trib(' + me.value + ')';
+}
+///////////////////////////////////////////////////////////////////

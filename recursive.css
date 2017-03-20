@@ -1,3 +1,5 @@
+
+/* Fibonacci Styles */
 .fib {
 	background-color: rgba(112,128,144,0.1);
 }
@@ -14,6 +16,7 @@
 	margin-left: 4px;
 }
 
+/* Pell Styles */
 .pell {
 	background-color: rgba(112,128,144,0.1);
 }
@@ -25,6 +28,23 @@
 }
 
 .pell-right {
+	float: right;
+	display: inline-block;
+	margin-left: 4px;
+}
+
+/* Tribonacci Styles */
+.trib {
+	background-color: rgba(112,128,144,0.1);
+}
+
+.trib-left {
+	float: left;
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.trib-right {
 	float: right;
 	display: inline-block;
 	margin-left: 4px;
