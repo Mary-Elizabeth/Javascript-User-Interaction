@@ -44,6 +44,7 @@
 
 /* Fibonacci Styles */
 .fib {
+	display: inline-block;
 	background-color: rgba(112,128,144,0.1);
 }
 
@@ -61,6 +62,7 @@
 
 /* Pell Styles */
 .pell {
+	display: inline-block;
 	background-color: rgba(112,128,144,0.1);
 }
 
@@ -78,6 +80,7 @@
 
 /* Tribonacci Styles */
 .trib {
+	display: inline-block;
 	background-color: rgba(112,128,144,0.1);
 }
 
