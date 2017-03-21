@@ -1,6 +1,8 @@
 	header {
-		background-color: #557253;
+		background-image: url("succulents.png");
+		background-color: #fdf8c1;
 		color: white;
+		height: 450px;
 		padding: 15px;
 	}
 	
@@ -14,21 +16,50 @@
 	
 	.panel-body {
 		margin: auto;
-		width: 100%;
-		height:90%;
-		background-image: url("fibonacci.jpg");
+		width: 80%;
+		height: 90%;
+		background-color: #fdf8c1;
 		background-size: cover;
-		border-left: 3px solid #557253;
-		border-right: 3px solid #557253;
 		padding: 10px;
 	}
 	
+	hr {
+		height: 10px;
+		border: 0;
+		box-shadow: 0 10px 10px -10px #557253 inset;
+	}
+	
 	body {
-		background-image: url("fibonacci.jpg");
+		background-color: #fdf8c1;
 		background-size: cover;
 		color: #404040;
 	}
-
+	
+	button {
+		color: black !important;
+		margin-bottom: 5px;
+	}
+	
+	.btn {
+		margin: 5px !important;
+	}
+	
+	.btn-group button {
+		border: 1px black;
+		margin: 80px 2px 2px 2px !important;
+		background-color: #557253;
+		color: #fff ! important;
+	}
+	/* Sliders */
+	
+	.slider {
+		-webkit-appearance: none;
+		height: 10px;
+		width: 45% !important;
+		border-radius: 5px;
+		background: #fff;
+		margin: 0 auto;
+	}
 	
 	footer a:link {
 		color: white;
@@ -41,101 +72,87 @@
 	footer a:hover {
 		color: #C8C8C8;
 	}
-
-
-/* Fibonacci Styles */
-.fib {
-	display: inline-block;
-	background-color: rgba(112,128,144,0.1);
-}
-
-.fib-left {
-	float: left;
-	display: inline-block;
-	margin-right: 4px;
-}
-
-.fib-right {
-	float: right;
-	display: inline-block;
-	margin-left: 4px;
-}
-
-/* Pell Styles */
-.pell {
-	display: inline-block;
-	background-color: rgba(112,128,144,0.1);
-}
-
-.pell-left {
-	float: left;
-	display: inline-block;
-	margin-right: 4px;
-}
-
-.pell-right {
-	float: right;
-	display: inline-block;
-	margin-left: 4px;
-}
-
-/* Tribonacci Styles */
-.trib {
-	display: inline-block;
-	background-color: rgba(112,128,144,0.1);
-}
-
-.trib-left {
-	float: left;
-	display: inline-block;
-	margin-right: 4px;
-}
-
-.trib-center {
-	margin: 0 auto;
-	display: inline-block;
-}
-
-.trib-right {
-	float: right;
-	display: inline-block;
-	margin-left: 4px;
-}
-
-.shadowed {
-	text-shadow: 1px 1px 2px black;
-	color:       white;
-}
-.stuff-box {
-	font-family: 'helvetica neue', helvetica, sans-serif;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	text-align: center;
-	padding: 3px 10px 0px;
-	margin: 50px;
-	cursor: pointer;
-	border-radius: 10px;
-	border-width: 2px;
-	border-style: solid;
-}
-
-.green {
-	border-color: #DBEE7F;
-	background:   #557253;
-	box-shadow: 1px 1px 2px rgba(0,200,0,0.4);
-}
-
-button {
-	color: black !important;
-	margin: 10px;
-}
-
-/* Sliders */
-.slider{
-  -webkit-appearance: none;
-  height: 10px;
-  width: 45% !important;
-  border-radius: 5px;
-  background: #fff;
-  margin: 0 auto;
-}
+	/* Fibonacci Styles */
+	
+	.fib {
+		display: inline-block;
+		background-color: rgba(112, 128, 144, 0.1);
+	}
+	
+	.fib-left {
+		float: left;
+		display: inline-block;
+		margin-right: 4px;
+	}
+	
+	.fib-right {
+		float: right;
+		display: inline-block;
+		margin-left: 4px;
+	}
+	
+	/* Pell Styles */
+	.pell {
+		display: inline-block;
+		background-color: rgba(112, 128, 144, 0.1);
+	}
+	
+	.pell-left {
+		float: left;
+		display: inline-block;
+		margin-right: 4px;
+	}
+	
+	.pell-right {
+		float: right;
+		display: inline-block;
+		margin-left: 4px;
+	}
+	
+	/* Tribonacci Styles */
+	.trib {
+		display: inline-block;
+		background-color: rgba(112, 128, 144, 0.1);
+	}
+	
+	.trib-left {
+		float: left;
+		display: inline-block;
+		margin-right: 4px;
+	}
+	
+	.trib-center {
+		margin: 0 auto;
+		display: inline-block;
+	}
+	
+	.trib-right {
+		float: right;
+		display: inline-block;
+		margin-left: 4px;
+	}
+	
+	.shadowed {
+		text-shadow: 1px 1px 2px black;
+		color: white;
+	}
+	
+	.stuff-box {
+		font-family: 'helvetica neue', helvetica, sans-serif;
+		letter-spacing: 1px;
+		text-transform: capitalize;
+		text-align: center;
+		padding: 3px 10px 0px;
+		margin: 50px;
+		cursor: pointer;
+		border-radius: 10px;
+		border-width: 2px;
+		border-style: solid;
+	}
+	
+	.green {
+		border-color: #DBEE7F;
+		background: #557253;
+		box-shadow: 1px 1px 2px rgba(0, 200, 0, 0.4);
+	}
+	

@@ -1,3 +1,26 @@
+////////////////////////////////////////////////////////////////////
+//button functions
+function showFib() {
+   document.getElementById('fibDiv').style.display = "block";
+   document.getElementById('pellDiv').style.display = "none";
+      document.getElementById('tribDiv').style.display = "none";
+
+}
+
+function showPell() {
+   document.getElementById('pellDiv').style.display = "block";
+   document.getElementById('fibDiv').style.display = "none";
+      document.getElementById('tribDiv').style.display = "none";
+
+}
+function showTrib() {
+   document.getElementById('tribDiv').style.display = "block";
+   document.getElementById('fibDiv').style.display = "none";
+   document.getElementById('pellDiv').style.display = "none";
+
+}
+
+
 
 ///////////////////////////////////////////////////////////////////
 //Fibonacci Sequence Functions
